@@ -1,0 +1,145 @@
+@import url("../cssNAG/pgn4web-font-LiberationSans.css");
+@import url("../cssNAG/pgn4web-font-ChessSansUsual.css");
+
+body, html {
+    color:Black;
+}
+a {
+    text-decoration:none;
+    color:black;
+}
+a:hover {
+    background-color: yellow;
+}
+a:focus {
+    background-color: Lavender;
+}
+#divVar_1 {margin-left: 20px; color: green;}
+#divVar_1 a {color:green;}
+#divVar_2 {margin-left: 20px; color: navy;}
+#divVar_2 a {color:navy;}
+#divVar_3 {margin-left: 20px; color: blue;}
+#divVar_3 a {color:blue;}
+#divVar_4 {margin-left: 20px; color: maroon;}
+#divVar_4 a {color:maroon;}
+#divVar_5 {margin-left: 20px; color: orange;}
+#divVar_5 a {color:orange;}
+#divVar_6 {margin-left: 20px; color: red;}
+#divVar_6 a {color:red;}
+#divVar_7 {margin-left: 20px;}
+#divVar_8 {margin-left: 20px;}
+#divVar_9 {margin-left: 20px;}
+#divVar_10 {margin-left: 20px;}
+
+#izquierda {margin: 5px; width: 400px; float: left;}
+#centro {float: left; width: 500px;}
+#derecha {float: left; width:400px; padding-left:10px;}
+#div_html_partida { margin: 5px; width: 500px; height: 440px; overflow: auto; }
+#areaComenta {width: 100%; height: 100px;}
+
+.NAGs, .NAGl { 
+    font-family: "pgn4web ChessInformantReader"; line-height: 1em; 
+}
+.movim {
+    font-family: 'pgn4web ChessSansUsual', 'pgn4web Liberation Sans', sans-serif;
+}
+
+.comen_derecha {
+    font-size: 15px;
+    color: #848484;
+    font-weight: 600;
+}
+.btn_confirma{
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #28A745;   /*#1883ba;*/
+    border-radius: 6px;
+    border: 2px solid #229954;
+}
+.btn_confirma:hover{
+    color: #229954;     /*#1883ba;*/
+    background-color: #ffffff;
+}
+
+.btn_para{
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #DC3545;   /*#1883ba;*/
+    border-radius: 6px;
+    border: 2px solid #A93226;
+}
+.btn_para:hover{
+    color: #A93226;     /*#1883ba;*/
+    background-color: #ffffff;
+}
+
+#btn_pgn{
+    /*position: relative;
+    left: 50%;
+    transform: translateX(-50%);*/
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #4C6D92;   /*#1883ba;*/
+    border-radius: 6px;
+    border: 2px solid Navy;
+}
+#btn_pgn:hover{
+    color: #4C6D92;     /*#1883ba;*/
+    background-color: #ffffff;
+}
+/* los select */
+#informator option {
+    font-family: "pgn4web ChessInformantReader"; line-height: 1em; 
+}
+/* ahora vamos con el tablero */
+
+#board-buttons {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.btnTablero {
+    border:1px solid #ccc;
+    background-color: #F5F5F5;
+    /* Bordes redondenados - Border Radius */
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.btnTablero:hover{
+    border-color:#adcce2; /* Modificamos el color del borde */
+ 
+    /* Cambiamos los colores del fondo degradado */
+    background:-webkit-linear-gradient(top, #fefefe, #f1f1f1); /* Chrome 10+ */
+    background:   -moz-linear-gradient(top, #fefefe, #f1f1f1); /* Firefox 3.6+ */
+    background:    -ms-linear-gradient(top, #fefefe, #f1f1f1); /* IE10 */
+    background:        linear-gradient(top, #fefefe, #f1f1f1);
+ 
+    /* Modificamos las propiedades del Box Shadow para un efecto Glow */
+    -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255, .3), inset 0 0 0 1px rgba(255,255,255, .6), 0 1px 6px rgba(36, 168, 229, .3);
+    -moz-box-shadow:inset 0 1px 0 rgba(251,247,193, .3), inset 0 0 0 1px rgba(251,247,193, .3), 0 1px 6px rgba(36, 168, 229, .3);
+    box-shadow:inset 0 1px 0 rgba(251,247,193, .3), inset 0 0 0 1px rgba(251,247,193, .3), 0 1px 6px rgba(36, 168, 229, .3);
+}
+
+
+#board-buttons .btnTablero {
+    display: inline;
+    float: left;
+    margin: 1.5%; /*8px;*/
+}

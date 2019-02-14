@@ -1,0 +1,12 @@
+/* la numeracion de las casillas es la que hay en chessboard.css */
+/* casilla blanca */
+.white-1e1d7 {
+    background-color: #ededd9;
+    color: #6494b1;
+}
+
+/* casilla negra */
+.black-3c85d {
+    color: #ededd9;
+    background-color: #4c6D92;
+}

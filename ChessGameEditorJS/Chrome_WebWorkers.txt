@@ -1,0 +1,10 @@
+Due to Chrome’s security restrictions, Web Workers will not run locally
+(e.g., from file://). Instead, they fail silently! To run your app using 
+local files and the file:// scheme, run Chrome with the 
+
+    --allow-file-access-from-files 
+    
+flag set. It is not recommended to run your regular browser with this flag set. 
+It should only be used for testing or development purposes.
+
+C:\>  "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files
